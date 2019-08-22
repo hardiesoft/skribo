@@ -76,7 +76,7 @@ pub fn make_layout(style: &TextStyle, font: &FontRef, text: &str) -> Layout {
                     offset: pos,
                 };
                 glyphs.push(glyph);
-                pos += adv_f;
+                pos += Vector2D::new(adv_f.x, adv_f.y);
             }
         }
     }
